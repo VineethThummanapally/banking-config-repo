@@ -28,4 +28,4 @@ jwt:
   expireMs: 1800000
   refrEshexpireMs: 1800000
 api:
-  profile: http://PROFILE-SERVICE/api/profile
+  profile: http://ACCOUNT-SERVICE/api/account
