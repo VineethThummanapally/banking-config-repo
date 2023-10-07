@@ -12,18 +12,11 @@ spring:
           uri: lb://AUTH-SERVICE
           predicates:
             - Path= /api/authenticate/**
-        - id: PROFILE-SERVICE
-          uri: lb://PROFILE-SERVICE
+        - id: ACCOUNT-SERVICE
+          uri: lb://ACCOUNT-SERVICE
           predicates:
-            - Path= /api/profile/**
-        - id: EDUCATION-SERVICE
-          uri: lb://EDUCATION-SERVICE
-          predicates:
-            - Path= /api/education/**
-        - id: EXPERIENCE-SERVICE
-          uri: lb://EXPERIENCE-SERVICE
-          predicates:
-            - Path= /api/experience/**
+            - Path= /api/account/**
+
 server:
   port: 9191
 management:
@@ -39,5 +32,5 @@ eureka:
     lease-renewal-interval-in-seconds: 30
 jwt:
   secret: mySecretKey
-  expireMs: 120000
-  refrEshexpireMs: 120000
+  expireMs: 1800000
+  refrEshexpireMs: 1800000
