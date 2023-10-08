@@ -31,4 +31,4 @@ management:
       exposure:
         include: refresh,health
 api:
-  auth: http://ACCOUNT-SERVICE/api/account
+  account: http://ACCOUNT-SERVICE/api/account
